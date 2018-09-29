@@ -303,16 +303,16 @@ endif()
 include(CLangFormat)
 
 if(UNIX AND NOT APPLE)
-  find_package(Qt5 COMPONENTS Core Network Concurrent Widgets Test LinguistTools DBus REQUIRED)
+  find_package(Qt5 COMPONENTS Core Network Concurrent Gui Widgets Test LinguistTools DBus REQUIRED)
 elseif(APPLE)
-  find_package(Qt5 COMPONENTS Core Network Concurrent Widgets Test LinguistTools REQUIRED
+  find_package(Qt5 COMPONENTS Core Network Concurrent Gui Widgets Test LinguistTools REQUIRED
     HINTS /usr/local/Cellar/qt/*/lib/cmake ENV PATH
   )
   find_package(Qt5 COMPONENTS MacExtras
     HINTS /usr/local/Cellar/qt/*/lib/cmake ENV PATH
   )
 else()
-  find_package(Qt5 COMPONENTS Core Network Concurrent Widgets Test LinguistTools REQUIRED)
+  find_package(Qt5 COMPONENTS Core Network Concurrent Gui Widgets Test LinguistTools REQUIRED)
 endif()
 
 if(Qt5Core_VERSION VERSION_LESS "5.2.0")

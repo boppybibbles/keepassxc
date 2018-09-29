@@ -210,7 +210,7 @@ private:
     void setIconFromParent();
     void replaceDatabase(Database* db);
 
-    Database* m_db;
+    QPointer<Database> m_db;
     QWidget* m_mainWidget;
     EditEntryWidget* m_editEntryWidget;
     EditEntryWidget* m_historyEditEntryWidget;

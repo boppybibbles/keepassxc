@@ -39,6 +39,7 @@ RUN set -x \
         clang-3.6 \
         libclang-common-3.6-dev \
         clang-format-3.6 \
+        llvm-3.6 \
         cmake3 \
         make \
         libgcrypt20-18-dev \
